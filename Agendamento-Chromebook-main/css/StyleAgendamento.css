@@ -1,0 +1,381 @@
+/* Estilo do calendário e quadrado */
+.conteudo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  /* Largura original para desktop */
+  background-color: #1B98E0;
+  border-radius: 10px;
+  padding-bottom: 15px;
+  position: relative;
+  /* Adicionado para possibilitar o posicionamento das setas */
+}
+
+hr {
+  background-color: rgb(0, 0, 0);
+  color: black;
+  width: 90%;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+td {
+  /* cor dos números do calendário */
+  color: white;
+}
+
+.btn-ant,
+.btn-pro {
+  position: absolute;
+  top: 40px;
+  /* Alinhado com o topo do cabeçalho */
+  height: 32px;
+  line-height: 32px;
+  background-color: #1B98E0;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.264);
+  z-index: 2;
+  /* Garantir que fiquem acima do conteúdo */
+}
+
+.btn-ant {
+  left: 10px;
+  /* Ajustado para posicionar à esquerda */
+}
+
+.btn-pro {
+  right: 10px;
+  /* Ajustado para posicionar à direita */
+}
+
+.btn-ant:hover,
+.btn-pro:hover {
+  background-color: #247BA0;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+thead {
+  font-weight: 600;
+}
+
+td {
+  border: 1px solid rgb(255, 255, 255);
+  text-align: center;
+  height: 61px;
+  width: 61px;
+}
+
+tbody td {
+  cursor: pointer;
+}
+
+tbody td:hover {
+  background-color: #247BA0;
+  color: #1B98E0;
+  /* border-radius: 15px; */
+}
+
+tbody .dia-atual {
+  border: 2px solid #13293D;
+  /* border-radius: 15px; */
+}
+
+.mes-anterior,
+.proximo-mes {
+  color: #cdb1d2;
+}
+
+.mes-anterior:hover,
+.proximo-mes:hover {
+  background-color: #98a0a063;
+  color: rgba(0, 0, 0, 0.471);
+}
+
+.dia-selecionado {
+  background-color: #13293D;
+  color: #ffffff;
+}
+
+/* escolher turnos */
+.secao-turno>h3 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+#turno {
+  /* cor do turno manha e noite */
+  background-color: #1B98E0;
+  width: 470px;
+  /* Largura original para desktop */
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.turno.selected {
+  background-color: #1B98E0;
+  border-radius: 5px;
+}
+
+#turno>p {
+  display: inline;
+  font-size: 20px;
+  color: white;
+}
+
+#manha {
+  margin-left: 22%;
+  padding: 3px;
+}
+
+#noite {
+  margin-left: 32%;
+  padding: 3px;
+}
+
+#turno>p:hover {
+  cursor: pointer;
+  background-color: #247BA0;
+  color: white;
+  border-radius: 5px;
+}
+
+.horas {
+  /* caixa de horario com cada horario */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  background-color: #1B98E0;
+  width: 470px;
+  /* Largura original para desktop */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.horario {
+  /* cor de cada horario */
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #247BA0;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+
+.horario.selected {
+  background-color: #13293D;
+}
+
+article {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+article>div {
+  background-color: #FF5F5F;
+  color: white;
+  width: 40px;
+  margin-top: 15px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+article>div:hover {
+  cursor: pointer;
+  background-color: #ff5f5f7d;
+  color: white;
+}
+
+/* Estilo das Informações do serviço */
+.quantidade {
+  background-color: #1B98E0;
+  color: white;
+  width: 470px;
+  /* Largura original para desktop */
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quantidade {
+  text-align: center;
+}
+
+#servico {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#preferencia {
+  width: 50px;
+  padding: 2px;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+#preferencia option {
+  text-align: center;
+}
+
+#servico,
+#preco,
+#tempo {
+  margin: 0px;
+}
+
+#servico {
+  display: inline;
+}
+
+#preco {
+  display: inline;
+  position: relative;
+  left: 240px;
+}
+
+#tempo {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.503);
+  position: relative;
+  left: 380px;
+}
+
+/* Section para selecionar funcionário */
+#preferencia {
+  border-radius: 5px;
+}
+
+/* Botão de reservar */
+#submit {
+  background-color: #1B98E0;
+  color: #ffffff;
+  width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  display: block;
+  margin: auto;
+  font-size: 20px;
+  border: 0px;
+}
+
+#submit:hover {
+  background-color: #247BA0;
+}
+
+/* Estilo do calendário e quadrado */
+.container {
+  display: flex;
+  justify-content: space-between;
+  gap: auto;
+  margin-right: 90px;
+  margin-top: 5%;
+}
+
+.quadrado {
+  background-color: #bfddf3;
+  border-radius: 5%;
+  margin-right: 1%;
+  padding: 10px;
+  display: flex;
+  /* Usando flexbox para melhor ajuste do conteúdo */
+  flex-direction: column;
+  /* Itens empilhados verticalmente */
+  align-items: center;
+  /* Centraliza itens horizontalmente */
+  justify-content: center;
+  /* Centraliza itens verticalmente */
+  flex-grow: 1;
+  /* Permite que o quadrado cresça para ocupar o espaço disponível */
+  overflow: hidden;
+  /* Oculta o conteúdo que ultrapassar os limites do quadrado */
+  max-width: 45%;
+}
+
+/* Media Query para visualização mobile */
+@media (max-width: 768px) {
+  body {
+    width: auto;
+    height: auto;
+    overflow: visible;
+    /* Garante que o conteúdo não seja cortado */
+    min-height: 100vh;
+  }
+
+  .container {
+    flex-direction: column;
+    /* Altera a direção do flex para coluna */
+    margin-right: 0;
+    /* Remove a margem à direita */
+    align-items: center;
+  }
+
+  .conteudo {
+    width: 90%;
+    /* Diminui a largura do calendário */
+    padding: 10px;
+    /* Diminui o padding do calendário */
+  }
+
+  .quadrado {
+    width: 90%;
+    /* Diminui a largura do quadrado */
+    padding: 10px;
+    /* Diminui o padding do quadrado */
+    max-width: 100%;
+    /* Garante que o quadrado não exceda 100% da largura da tela */
+    font-size: 0.8em;
+    /* Diminui a fonte proporcionalmente para ajustar o conteúdo */
+    flex-direction: column;
+    /* Mantém os itens em coluna */
+    overflow: hidden;
+    /* Oculta o conteúdo que ultrapassa os limites do quadrado */
+  }
+
+  .quantidade {
+    width: 90%;
+  }
+
+  .horas {
+    width: 90%;
+  }
+
+  .calendario {
+    margin-bottom: 20px;
+    /* Espaçamento entre o calendário e o quadrado */
+  }
+
+  .quadrado {
+    margin-right: 0;
+    /* Remove a margem à direita */
+  }
+}

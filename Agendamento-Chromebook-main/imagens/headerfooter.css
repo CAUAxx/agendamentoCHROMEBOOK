@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFCCD5;
+  font-family: "Roboto", sans-serif;
+}
+
+ /* COMEÇO DA HEADER */
+.header {
+  position: relative;
+}
+
+.header-container {
+  width: 100%;
+  height: 150px;
+  color: white;
+  font-family: 'Syne', sans-serif;
+  top: 0;
+  margin-bottom: 20px; /* Adicione margem inferior para separar do conteúdo */
+}
+
+.syne-une {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.dsada-1-icon {
+    top: 0;
+    left: 180px;
+    border-radius: var(--br-5xs);
+    width: 90px;
+    height: 89px;
+    object-fit: cover;
+}
+
+input,
+select{
+  left: 759px;
+  border-radius: 8px;
+  width: 403px;
+  height: 40px;
+  background-color: #EDF2F7;
+  border: none;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  font-family: "Roboto";
+  font-size: large;
+  color: #6c757d;
+}
+
+
+::placeholder{
+  font-size: large;
+  padding-left: 15px;
+}
+
+.registrar {
+  top: 50px;
+  left: 1367px;
+  background-color: #FC749C;
+  color: #fff;
+  display: inline-block;
+  width: 186px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+}
+
+.registrar:hover {
+  background-color: #FFB3C1;
+}
+
+.pgina-inicial,
+.registrar {
+  position: absolute;
+  font-weight: 500;
+  font-size: large;
+}
+
+.pgina-inicial {
+  top: 50px;
+  left: 1143px;
+  color: #fff;
+  background-color: #4A5568;
+  display: inline-block;
+  width: 186px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+}
+
+.pgina-inicial:hover {
+  background-color: #6c757d;
+}
+
+.registrar1 {
+  top: 620px;
+  left: 924px;
+}
+
+.belezacertaqui {
+  position: absolute;
+  top: 35px;
+  left: 369px;
+  font-size: 40px;
+  display: inline-block;
+  font-family: var(--font-syne);
+  width: 419px;
+  height: 109px;
+  color: #000;
+}
+
+.unhas-1-icon4 {
+  position: absolute;
+  top: 15px;
+  left: 260px;
+  width: 90px;
+  height: 89px;
+  object-fit: cover;
+}
+
+#submit {
+  background-color: #FC749C;
+  color: #fff;
+}
+
+#submit:hover {
+  background-color: #FFB3C1;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+a:hover {
+  color: #FC749C;
+}
+
+
+/* FIM DA HEADER */
+
+.conteudo {
+  flex: 1 0 auto; /* Faz com que o conteúdo ocupe o espaço restante da página */
+}
+
+
+/*COMEÇO DO FOOTER*/
+
+.footer-container {
+  width: 100%;
+  position: sticky;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  margin-top: 20px; /* Adicione margem superior para separar do conteúdo (nao sei por que aqui ficou no footer e nao no container, ja que no header foi no container, mas foi) */
+  color: aqua;
+  background-color: #000;
+}
+
+.footer-background {
+  width: 100%;
+  height: 298px;
+}
+
+.footer-contact, 
+.footer-social-media, 
+.footer-socialmediaicons,
+.footer-about-us, 
+.footer-terms, 
+.footer-phone, 
+.footer-email {
+  font-size: 24px;
+  position: absolute;
+  text-align: left;
+}
+
+.footer-contact {
+  top: 56px;
+  left: 536px;
+}
+
+.footer-social-media {
+  top: 56px;
+  left: 1034px;
+}
+
+.footer-socialmediaicons {
+  top: 90px;
+  left: 1034px;
+}
+
+.footer-about-us {
+  top: 56px;
+  left: 94px;
+}
+
+.footer-terms {
+  top: 98px;
+  left: 93px;
+}
+
+.icone {
+
+  width: 30px;
+  height: 30x;
+  margin-bottom: -5px;
+
+}
+.footer-phone {
+  top: 98px;
+  left: 536px;
+}
+
+.footer-email {
+  top: 140px;
+  left: 536px;
+}
+
+/* FIM DO FOOTER*/
